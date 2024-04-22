@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User-Based Music Forum</title>
+<style>
+    /* CSS Styles for visually appealing layout */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    h1 {
+        color: #333;
+    }
+    form {
+        margin-bottom: 20px;
+    }
+    input {
+        padding: 8px;
+        margin: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>User-Based Music Forum</h1>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit" onclick="login()">Login</button>
+    </form>
+    <div id="forumBoards">
+        <!-- Forum Boards will be dynamically populated here -->
+    </div>
+</div>
+<script>
+    // Mock user data for demonstration
+    const users = [
+        { username: "user1", password: "password1" },
+        { username: "user2", password: "password2" }
+    ];
+
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const user = users.find(u => u.username === username && u.password === password);
+        
+        if (user) {
+            alert("Login successful!");
+            // Code for redirecting to forum boards or displaying posts
+        } else {
+            alert("Invalid credentials. Please try again.");
+        }
+    }
+</script>
+</body>
+</html>

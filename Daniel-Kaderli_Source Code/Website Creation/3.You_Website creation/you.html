@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Based Music Forum</title>
+  <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  main {
+    padding: 20px;
+  }
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>User Based Music Forum</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#boards">Boards</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Welcome to the Music Forum!</h2>
+      <!-- Content for the home section goes here -->
+    </section>
+    <section id="boards">
+      <h2>Boards</h2>
+      <!-- Board categories and posts go here -->
+    </section>
+    <section id="login">
+      <h2>Login / Register</h2>
+      <!-- Login and registration forms go here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Music Forum</p>
+  </footer>
+  <script>
+  // JavaScript code for interactive elements can include form validation, login/logout functionality, etc.
+  // Due to the complexity of login/logout and user account management, a simple example is included below:
+
+  // Sample login/logout functionality
+  let loggedInUser = null;
+
+  function login(username, password) {
+    // Simulated login logic (not secure, for demo purposes only)
+    if (username === 'user' && password === 'password') {
+      loggedInUser = username;
+      alert('Login successful!');
+      // Additional logic for displaying user-specific content, etc.
+    } else {
+      alert('Invalid username or password');
+    }
+  }
+
+  function logout() {
+    // Simulated logout logic
+    loggedInUser = null;
+    // Additional logic for clearing user-specific content, etc.
+    alert('Logged out successfully');
+}
+</script>
+</body>
+</html>

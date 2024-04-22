@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Music Forum</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --primary-color: #007bff;
+        --secondary-color: #6c757d;
+        --font-family: Arial, sans-serif;
+    }
+    
+    html{
+        font-size: 62.5%;
+    }
+    
+    body{
+        font-family: var(--font-family);
+        background-color: #f8f9fa;
+    }
+    
+    header{
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header nav ul{
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    header nav ul li{
+        padding: 0 10px;
+    }
+    
+    header nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    header.logo h1{
+        font-size: 2.5rem;
+    }
+    
+    header.login-container a{
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    section{
+        padding: 20px;
+    }
+    
+    section h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    section p{
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    
+    section.button{
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    footer{
+        background-color: var(--secondary-color);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 768px){
+        header nav ul{
+            display: block;
+        }
+    
+        header.login-container{
+            text-align: center;
+        }
+    
+        main{
+            padding: 10px;
+        }
+    
+        section{
+            padding: 10px;
+        }
+    
+        section p{
+            font-size: 1.4rem;
+        }
+    
+        section.button{
+            padding: 8px 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1>Music Forum</h1>
+        </div>
+        <div class="login-container">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <h2>Welcome to our Music Forum!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="services-container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <i class="fas fa-music"></i>
+                    <h3>Music</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Headphones</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Music Forum</p>
+    </footer>
+    <script>
+        const loginBtn = document.querySelector(".login");
+        const registerBtn = document.querySelector(".register");
+
+        loginBtn.addEventListener("click", () => {
+            console.log("Login button clicked!");
+        });
+
+        registerBtn.addEventListener("click", () => {
+            console.log("Register button clicked!");
+        });
+    </script>
+</body>
+</html>

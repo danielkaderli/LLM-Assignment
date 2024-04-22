@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Music Forum</title>
+    <style>
+        a:link, a:visited {
+            color: #007bff;
+        }
+
+        a:hover, a:active {
+            color: #0056b3;
+        }
+
+        a:focus {
+            outline: 1px dotted #007bff;
+        }
+
+       .visually-hidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+       .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+       .button:hover {
+            background-color: #0062cc;
+        }
+
+       .button:focus {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
+       .button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+       .login {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+       .login:hover {
+            background-color: #0062cc;
+        }
+
+       .login:focus {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
+       .login:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+       .register {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+       .register:hover {
+            background-color: #5a6268;
+        }
+
+       .register:focus {
+            box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.5);
+        }
+
+       .register:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1>Music Forum</h1>
+        </div>
+        <div class="login-container">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <h2>Welcome to our Music Forum!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="services-container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <i class="fas fa-music"></i>
+                    <h3>Music</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Headphones</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Music Forum</p>
+    </footer>
+    <script>
+        const loginBtn = document.querySelector(".login");
+        const registerBtn = document.querySelector(".register");
+
+        loginBtn.addEventListener("click", () => {
+            console.log("Login button clicked!");
+        });
+
+        registerBtn.addEventListener("click", () => {
+            console.log("Register button clicked!");
+        });
+    </script>
+</body>
+</html>

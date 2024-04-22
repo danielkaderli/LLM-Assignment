@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Forum</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+  .container { max-width: 960px; margin: auto; padding: 20px; }
+  .header, .footer { text-align: center; padding: 10px; background-color: #a2d2ff; }
+  .login { max-width: 300px; margin: 20px auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; }
+  .button { background-color: #0056b3; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; }
+  label { display: block; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Music Forum</h1>
+  </div>
+  
+  <!-- Login Form -->
+  <div class="login">
+    <h2>Login</h2>
+    <label for="username">Username</label>
+    <input type="text" placeholder="Username" id="username">
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password">
+    <button class="button" onclick="login()">Login</button>
+  </div>
+  
+  <!-- Content will go here -->
+  
+  <div class="footer">
+    <p>Music Forum © 2023</p>
+  </div>
+</div>
+
+<script>
+function login() {
+  // Placeholder for login logic
+  alert("Login functionality not implemented.");
+}
+</script>
+
+</body>
+</html>
